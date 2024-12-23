@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ofertas - Ecomaker</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset de márgenes y paddings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        /* Sección de Ofertas */
+        #ofertas {
+            padding: 60px 20px;
+            background-color: #ffecb3; /* Fondo cálido para llamar la atención */
+        }
+
+        #ofertas h2 {
+            font-size: 2.5em;
+            color: #d9534f;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .offers-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Grid responsivo */
+            gap: 30px;
+            justify-items: center;
+        }
+
+        .offer-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            position: relative;
+            width: 100%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            padding-bottom: 20px;
+            border: 2px solid #ff5733; /* Borde llamativo */
+        }
+
+        .offer-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-bottom: 3px solid #ff5733;
+        }
+
+        .offer-card h3 {
+            font-size: 1.8em;
+            margin: 20px 0;
+            color: #333;
+        }
+
+        .offer-card p {
+            font-size: 1.1em;
+            color: #666;
+            padding: 0 15px;
+        }
+
+        .offer-card .price {
+            font-size: 1.5em;
+            color: #d9534f;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .offer-card .old-price {
+            font-size: 1.2em;
+            text-decoration: line-through;
+            color: #888;
+        }
+
+        .offer-card .discount {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #d9534f;
+            color: white;
+            padding: 10px 15px;
+            font-weight: bold;
+            font-size: 1.2em;
+            border-radius: 5px;
+        }
+
+        .offer-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .view-all-offers {
+            display: block;
+            background-color: #28a745;
+            color: white;
+            padding: 12px 30px;
+            text-align: center;
+            margin: 30px auto 0;
+            font-size: 1.2em;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .view-all-offers:hover {
+            background-color: #218838;
+        }
+
+        /* Clase para ocultar los productos adicionales */
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sección de Ofertas -->
+    <section id="ofertas">
+        <h2>Ofertas Especiales</h2>
+        <a href="index.html" class="view-all-offers" id="ver-mas-btn">Volver</a>
+
+        <div class="offers-container">
+            <!-- Tarjeta 1 - Oferta -->
+            <div class="offer-card">
+                <div class="discount">-30%</div>
+                <img src="https://via.placeholder.com/300x250" alt="Oferta 1">
+                <h3>Producto Eco 1</h3>
+                <p>Descripción del producto con un gran descuento. ¡No te lo pierdas!</p>
+                <div class="price">$15.99 <span class="old-price">$22.99</span></div>
+            </div>
+
+            <!-- Tarjeta 2 - Oferta -->
+            <div class="offer-card">
+                <div class="discount">-50%</div>
+                <img src="https://via.placeholder.com/300x250" alt="Oferta 2">
+                <h3>Producto Eco 2</h3>
+                <p>¡Gran descuento en este producto eco-friendly! Ahorra más ahora.</p>
+                <div class="price">$9.99 <span class="old-price">$19.99</span></div>
+            </div>
+
+            <!-- Tarjeta 3 - Oferta -->
+            <div class="offer-card">
+                <div class="discount">-40%</div>
+                <img src="https://via.placeholder.com/300x250" alt="Oferta 3">
+                <h3>Producto Eco 3</h3>
+                <p>¡Este producto ecológico ahora tiene un precio irresistible!</p>
+                <div class="price">$12.99 <span class="old-price">$21.99</span></div>
+            </div>
+
+            <!-- Tarjeta 4 - Oferta -->
+            <div class="offer-card">
+                <div class="discount">-25%</div>
+                <img src="https://via.placeholder.com/300x250" alt="Oferta 4">
+                <h3>Producto Eco 4</h3>
+                <p>Compra ahora y obtén un 25% de descuento en este increíble producto eco.</p>
+                <div class="price">$16.99 <span class="old-price">$22.99</span></div>
+            </div>
+
+            <!-- Tarjeta 5 - Oferta -->
+            <div class="offer-card">
+                <div class="discount">-35%</div>
+                <img src="https://via.placeholder.com/300x250" alt="Oferta 5">
+                <h3>Producto Eco 5</h3>
+                <p>¡Aprovecha esta oferta! Un descuento único solo por tiempo limitado.</p>
+                <div class="price">$13.99 <span class="old-price">$21.99</span></div>
+            </div>
+        </div>
+
+        <!-- Productos adicionales ocultos -->
+        <div class="offer-card hidden">
+            <img src="https://via.placeholder.com/300x250" alt="Producto 6">
+            <h3>Producto Eco 6</h3>
+            <p>Descripción breve del producto Eco 6. Perfecto para el hogar ecológico.</p>
+        </div>
+
+        <div class="offer-card hidden">
+            <img src="https://via.placeholder.com/300x250" alt="Producto 7">
+            <h3>Producto Eco 7</h3>
+            <p>Descripción breve del producto Eco 7. Solución energética eficiente para tu vida diaria.</p>
+        </div>
+
+        <div class="offer-card hidden">
+            <img src="https://via.placeholder.com/300x250" alt="Producto 8">
+            <h3>Producto Eco 8</h3>
+            <p>Descripción breve del producto Eco 8. Tecnología verde para mejorar tu calidad de vida.</p>
+        </div>
+
+        <div class="offer-card hidden">
+            <img src="https://via.placeholder.com/300x250" alt="Producto 9">
+            <h3>Producto Eco 9</h3>
+            <p>Descripción breve del producto Eco 9. Sostenibilidad al alcance de todos.</p>
+        </div>
+
+        <!-- Botón para ver más productos -->
+        <a href="javascript:void(0);" class="view-all-offers" id="ver-mas-btn">Ver más productos</a>
+    </section>
+
+    <script>
+        // Función para mostrar los productos ocultos
+        document.getElementById('ver-mas-btn').addEventListener('click', function() {
+            // Seleccionamos todos los productos ocultos
+            const hiddenProducts = document.querySelectorAll('.hidden');
+            
+            // Los mostramos
+            hiddenProducts.forEach(product => {
+                product.classList.remove('hidden');
+            });
+
+            // Ocultamos el botón "Ver más productos" después de hacer clic
+            this.style.display = 'none';
+        });
+    </script>
+
+</body>
+</html>

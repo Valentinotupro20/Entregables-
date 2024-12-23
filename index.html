@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ecomaker - Innovación y Sostenibilidad</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset de márgenes y paddings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        /* Menú de navegación */
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            background-color: #343a40;
+        }
+
+        nav a {
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #495057;
+        }
+
+        /* Carrusel de imágenes */
+        .slider {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+        }
+
+        .slider img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .slider .caption {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 2em;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Sección de categorías de productos */
+        .categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .category-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            text-align: center;
+        }
+
+        .category-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .category-card h3 {
+            margin-top: 15px;
+            font-size: 1.2em;
+        }
+
+        /* Ofertas especiales */
+        .special-offers {
+            background-color: #f1f1f1;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .special-offers h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .offer-card {
+            display: inline-block;
+            background-color: #28a745;
+            color: white;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .offer-card h4 {
+            font-size: 1.5em;
+        }
+
+        .offer-card p {
+            margin-top: 10px;
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <div class="logo">Ecomaker</div>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="categorias.html">Categorías</a>
+        <a href="ofertas.html">Ofertas</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <!-- Carrusel de imágenes -->
+    <section class="slider">
+        <img src="https://via.placeholder.com/1500x400" alt="Imagen principal">
+        <div class="caption">
+            <p>Transforma tu vida con productos sostenibles</p>
+        </div>
+    </section>
+
+    <!-- Categorías de productos -->
+    <section id="categorias" class="categories">
+        <div class="category-card">
+            <img src="https://via.placeholder.com/200" alt="Categoría 1">
+            <h3>Productos Ecoamigables</h3>
+        </div>
+        <div class="category-card">
+            <img src="https://via.placeholder.com/200" alt="Categoría 2">
+            <h3>Reciclaje y Compostaje</h3>
+        </div>
+        <div class="category-card">
+            <img src="https://via.placeholder.com/200" alt="Categoría 3">
+            <h3>Electrónica Verde</h3>
+        </div>
+        <div class="category-card">
+            <img src="https://via.placeholder.com/200" alt="Categoría 4">
+            <h3>Hogar Sostenible</h3>
+        </div>
+    </section>
+
+    <!-- Ofertas especiales -->
+    <section id="ofertas" class="special-offers">
+        <h2>¡Ofertas Especiales!</h2>
+        <div class="offer-card">
+            <h4>Descuento 30% en Productos Verdes</h4>
+            <p>Aprovecha hoy mismo y haz tu compra.</p>
+        </div>
+        <div class="offer-card">
+            <h4>2x1 en Bolsas Reutilizables</h4>
+            <p>Compra dos y lleva tres, por tiempo limitado.</p>
+        </div>
+        <div class="offer-card">
+            <h4>Envíos Gratis a Todo el País</h4>
+            <p>Haz tu pedido ahora y recibe tu compra sin costo adicional.</p>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Ecomaker. Todos los derechos reservados.</p>
+        <p>
+            <a href="contacto.html">Contáctanos</a> | <a href="politicas.html">Políticas</a> | <a href="terminos.html">Términos y Condiciones</a>
+        </p>
+    </footer>
+
+</body>
+</html>

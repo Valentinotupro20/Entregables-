@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Categorías - Ecomaker</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset de márgenes y paddings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        /* Sección de Categorías */
+        #categorias {
+            padding: 60px 20px;
+            background-color: #e9ecef;
+        }
+
+        #categorias h2 {
+            font-size: 2.5em;
+            color: #28a745;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .categories-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Grid responsive */
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .category-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            width: 100%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .category-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 2px solid #28a745;
+        }
+
+        .category-card h3 {
+            font-size: 1.5em;
+            margin: 15px 0;
+            color: #333;
+        }
+
+        .category-card p {
+            font-size: 1em;
+            padding: 0 15px 20px;
+            color: #666;
+        }
+
+        .category-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Botón para ver más productos (opcional) */
+        .view-more {
+            display: block;
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            margin: 30px auto 0;
+            font-size: 1.2em;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .view-more:hover {
+            background-color: #218838;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sección de Categorías -->
+    <section id="categorias">
+        <h2>Categorías de Productos</h2>
+        <a href="index.html" class="view-more" id="ver-mas-btn">Volver</a>
+
+        <div class="categories-container" id="productos-container">
+            <!-- Tarjeta 1 - Producto -->
+            <div class="category-card">
+                <img src="https://via.placeholder.com/280x200" alt="Producto 1">
+                <h3>Producto Eco 1</h3>
+                <p>Descripción breve del producto Eco 1. Ideal para un estilo de vida más verde y sostenible.</p>
+            </div>
+
+            <!-- Tarjeta 2 - Producto -->
+            <div class="category-card">
+                <img src="https://via.placeholder.com/280x200" alt="Producto 2">
+                <h3>Producto Eco 2</h3>
+                <p>Descripción breve del producto Eco 2. Ahorra energía y reduce tu huella de carbono.</p>
+            </div>
+
+            <!-- Tarjeta 3 - Producto -->
+            <div class="category-card">
+                <img src="https://via.placeholder.com/280x200" alt="Producto 3">
+                <h3>Producto Eco 3</h3>
+                <p>Descripción breve del producto Eco 3. Productos reutilizables para un hogar más sostenible.</p>
+            </div>
+
+            <!-- Tarjeta 4 - Producto -->
+            <div class="category-card">
+                <img src="https://via.placeholder.com/280x200" alt="Producto 4">
+                <h3>Producto Eco 4</h3>
+                <p>Descripción breve del producto Eco 4. Perfecto para mejorar tu estilo de vida ecoamigable.</p>
+            </div>
+
+            <!-- Tarjeta 5 - Producto -->
+            <div class="category-card">
+                <img src="https://via.placeholder.com/280x200" alt="Producto 5">
+                <h3>Producto Eco 5</h3>
+                <p>Descripción breve del producto Eco 5. Aporta al planeta con cada compra que realices.</p>
+            </div>
+
+            <!-- Tarjeta 6 - Producto -->
+            <div class="category-card">
+                <img src="https://via.placeholder.com/280x200" alt="Producto 6">
+                <h3>Producto Eco 6</h3>
+                <p>Descripción breve del producto Eco 6. Reduce, reutiliza y recicla con estilo.</p>
+            </div>
+
+            <!-- Tarjetas adicionales que estarán ocultas inicialmente -->
+            <div class="category-card hidden">
+                <img src="https://via.placeholder.com/280x200" alt="Producto 7">
+                <h3>Producto Eco 7</h3>
+                <p>Descripción breve del producto Eco 7. Perfecto para el hogar ecológico.</p>
+            </div>
+
+            <div class="category-card hidden">
+                <img src="https://via.placeholder.com/280x200" alt="Producto 8">
+                <h3>Producto Eco 8</h3>
+                <p>Descripción breve del producto Eco 8. Solución energética eficiente para tu vida diaria.</p>
+            </div>
+
+            <div class="category-card hidden">
+                <img src="https://via.placeholder.com/280x200" alt="Producto 9">
+                <h3>Producto Eco 9</h3>
+                <p>Descripción breve del producto Eco 9. Tecnología verde para mejorar tu calidad de vida.</p>
+            </div>
+
+            <div class="category-card hidden">
+                <img src="https://via.placeholder.com/280x200" alt="Producto 10">
+                <h3>Producto Eco 10</h3>
+                <p>Descripción breve del producto Eco 10. Sostenibilidad al alcance de todos.</p>
+            </div>
+        </div>
+
+        <!-- Botón para ver más productos -->
+        <a href="javascript:void(0);" class="view-more" id="ver-mas-btn">Ver más productos</a>
+    </section>
+
+    <script>
+        // Función para mostrar los productos ocultos
+        document.getElementById('ver-mas-btn').addEventListener('click', function() {
+            // Seleccionamos todos los productos ocultos
+            const hiddenProducts = document.querySelectorAll('.hidden');
+            
+            // Los mostramos
+            hiddenProducts.forEach(product => {
+                product.classList.remove('hidden');
+            });
+
+            // Ocultamos el botón "Ver más productos" después de hacer clic
+            this.style.display = 'none';
+        });
+    </script>
+
+</body>
+</html>
